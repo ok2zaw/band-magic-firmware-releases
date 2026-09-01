@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Band Magic — Firmware Flasher</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 640px;
+    margin: 48px auto;
+    padding: 0 20px;
+    line-height: 1.5;
+  }
+  h1 { font-size: 1.5rem; }
+  .card {
+    border: 1px solid rgba(127,127,127,.35);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  .hint { color: rgba(127,127,127,1); font-size: .9rem; }
+  code { background: rgba(127,127,127,.15); padding: .1em .4em; border-radius: 4px; }
+  a { color: inherit; }
+</style>
+<script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js"></script>
+</head>
+<body>
+  <h1>Band Magic — Firmware Flasher</h1>
+  <p>Flash the latest Band Magic firmware directly from this page — no software
+  install needed. Works in Chrome or Edge on desktop.</p>
+
+  <div class="card">
+    <esp-web-install-button manifest="espwebtools-manifest.json">
+      <button slot="activate">Connect device &amp; install</button>
+      <span slot="unsupported">Your browser doesn't support Web Serial. Use Chrome or Edge on desktop.</span>
+      <span slot="not-allowed">This page needs to be served over HTTPS to flash a device.</span>
+    </esp-web-install-button>
+  </div>
+
+  <p class="hint">
+    Connect the IMPERO 32 board over USB first, then click the button above and
+    select its serial port when prompted. This performs a full erase-and-flash —
+    any saved profiles/settings on the device will be reset to factory defaults.
+    For updating a device that's already running Band Magic and reachable on
+    your LAN, use its own web UI's <strong>System &rarr; Check for OTA
+    update</strong> instead, which updates in place without erasing settings.
+  </p>
+
+  <p class="hint">
+    Firmware source: <a href="https://github.com/ok2zaw/band-magic">private
+    repository</a> (this repo only hosts built binaries and this flasher page).
+    Binaries: see <a href="https://github.com/ok2zaw/band-magic-firmware-releases/releases">Releases</a>.
+  </p>
+</body>
+</html>
