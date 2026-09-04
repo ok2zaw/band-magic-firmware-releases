@@ -1,5 +1,10 @@
 # Band Magic — Firmware Releases
 
+Band Magic firmware is closed-source. This repo is a binary-only
+distribution point — compiled `.bin` releases and the web flasher
+page — never the source code. The private source repo stays private;
+nothing from it gets pushed here.
+
 ## Updating a device
 
 - Already running Band Magic, on your LAN: use its own web UI's
