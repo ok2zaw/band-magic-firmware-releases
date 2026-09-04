@@ -1,7 +1,7 @@
 {
-  "version": "0.1.7",
+  "version": "0.1.8",
   "url": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/latest/download/firmware.bin",
-  "sha256": "8aaf7f7e1fdb9079a7fc345c815e9d5cde664c4ae8f993df6491204e1bc32af0",
+  "sha256": "6ccffa210ac78d7567d9e05c9958f1070bd0f768278201c3fe15eef28763e2c8",
   "fsUrl": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/latest/download/littlefs.bin",
-  "fsSha256": "259fba3386de4269cdf0370ba462826f0ac609ca8ce99b1abad2b45d22a83c4b"
+  "fsSha256": "c1c3e3f68423180c6f11da54be3fdf4ea01a0a8e188ff52061bd1bf08cf6f89e"
 }
