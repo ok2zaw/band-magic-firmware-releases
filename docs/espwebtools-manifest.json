@@ -1,6 +1,6 @@
 {
   "name": "Band Magic",
-  "version": "0.1.5",
+  "version": "0.1.7",
   "new_install_prompt_erase": true,
   "builds": [
     {
@@ -9,7 +9,8 @@
         { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/latest/download/bootloader.bin", "offset": 4096 },
         { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/latest/download/partitions.bin", "offset": 32768 },
         { "path": "boot_app0.bin", "offset": 57344 },
-        { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/latest/download/firmware.bin", "offset": 65536 }
+        { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/latest/download/firmware.bin", "offset": 65536 },
+        { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/latest/download/littlefs.bin", "offset": 13172736 }
       ]
     }
   ]
