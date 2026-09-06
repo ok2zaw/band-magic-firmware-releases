@@ -1,16 +1,16 @@
 {
   "name": "Band Magic",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "new_install_prompt_erase": true,
   "builds": [
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/latest/download/bootloader.bin", "offset": 4096 },
-        { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/latest/download/partitions.bin", "offset": 32768 },
+        { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/download/v0.1.9/bootloader.bin", "offset": 4096 },
+        { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/download/v0.1.9/partitions.bin", "offset": 32768 },
         { "path": "boot_app0.bin", "offset": 57344 },
-        { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/latest/download/firmware.bin", "offset": 65536 },
-        { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/latest/download/littlefs.bin", "offset": 13172736 }
+        { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/download/v0.1.9/firmware.bin", "offset": 65536 },
+        { "path": "https://github.com/ok2zaw/band-magic-firmware-releases/releases/download/v0.1.9/littlefs.bin", "offset": 13172736 }
       ]
     }
   ]
